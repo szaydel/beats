@@ -15,8 +15,8 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !aix
-// +build !aix
+//go:build !(aix || illumos)
+// +build !aix,!illumos
 
 package kubernetes
 
